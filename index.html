@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorcas Mwihaki | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="adaL.jpg">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-links">
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#ideas">Ideas</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Hi, I am <span>Dorcas Mwihaki</span></h1>
+            <h2>A Software Developer and Founder</h2>
+            <p>Want to Brainstorm?</p>
+            <a href="#contact" class="btn">Let's Talk</a>
+        </div>
+        <div class="hero-decoration">
+            <div class="circle pink"></div>
+            <div class="circle lilac"></div>
+            <div class="circle mint"></div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="section-header">
+            <h2>Skills & Expertise</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Javascript</span>
+                    <span class="skill-tag">Java Spark</span>
+                    <span class="skill-tag">Angular</span>
+                    <span class="skill-tag">Jquery</span>
+                    <span class="skill-tag">Typescript</span>
+                    <span class="skill-tag">Bootstrap</span>
+                    <span class="skill-tag">HTML</span>
+                    <span class="skill-tag">CSS</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Oracle</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">API</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Other</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Machine Learning</span>
+                    <span class="skill-tag">Data Analytics</span>
+                    <span class="skill-tag">QA</span>
+                    <span class="skill-tag">HCI</span>
+                    <span class="skill-tag">Firebase</span>
+                    <span class="skill-tag">Heroku</span>
+                    <span class="skill-tag">JUnit</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">Scikit</span>
+                    <span class="skill-tag">Web3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="section-header">
+            <h2>Featured Projects</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <h3>Insights</h3>
+                <p>A website that enables students share their past instructors' insights helping students choose
+                    instructors based on their preferences and learning styles.</p>
+                <a href="https://github.com/dorcasndungu/Insights_page.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>Fish Farming Predictive Model</h3>
+                <p>A predictive Machine Learning model that helps Kenyan fish farmers improve their livelihoods through optimized fish farming practices. This aligns with SDG 8 - Decent Work and Economic Growth.</p>
+                <a href="https://github.com/dorcasndungu/Fish-Farming-Model.git" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+            <div class="project-card">
+                <h3>2D Snake Game</h3>
+                <p>Modified an open source popular snake game that can be added to sections of websites to enhance interactivity.</p>
+                <a href="https://github.com/dorcasndungu/Dorcas_portfolio" target="_blank" class="project-link">
+                    <i class="fab fa-github"></i> View on GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ideas Section -->
+    <section id="ideas" class="ideas">
+        <div class="section-header">
+            <h2>Share Your Ideas</h2>
+            <div class="divider"></div>
+            <p>Have an idea that could solve a problem and want to collaborate? Share it with me!</p>
+        </div>
+        <form id="idea-form" class="idea-form">
+            <div class="form-group">
+                <label for="idea-title">Idea/Problem Title</label>
+                <input type="text" id="idea-title" name="idea-title" required>
+            </div>
+            <div class="form-group">
+                <label for="idea-description">Description</label>
+                <textarea id="idea-description" name="idea-description" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <label for="idea-email">Your Email</label>
+                <input type="email" id="idea-email" name="idea-email" required>
+            </div>
+            <button type="submit" class="btn">Submit Idea</button>
+            <div id="form-message" class="form-message"></div>
+        </form>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="image-placeholder"></div>
+            </div>
+            <div class="about-content">
+                <h2>About Me</h2>
+                <div class="divider"></div>
+                <p>Hello! My name is Dorcas Mwihaki. I am a Software Developer with 2 years+ experience. I develop android apps, programs, websites, ML models and I've lately been exploring the intersection of entrepreneurship and technology.</p>
+                <p>Besides programming, I enjoy journaling and reading African fiction. I also swim, play chess and basketball occasionally.</p>
+                <p>I am open to any problem solving opportunities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="section-header">
+            <h2>Get in Touch</h2>
+            <div class="divider"></div>
+        </div>
+        <div class="contact-content">
+            <p>Are you looking for a curious and adaptable software developer to join your team? Look no further. Looking for any kind of consultation? Want to ask questions? Have some advice for me? Want to say "Hi 👋"? Feel free to Let me know. You can reach me via email.</p>
+            <a href="mailto:dorcas@example.com" class="btn email-btn">
+                <i class="fas fa-envelope"></i> ndungumwihaki017@gmail.com
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/dorcas-ndungu" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/dorcasndungu" target="_blank"><i class="fab fa-github"></i></a>
+            <!-- <a href="#" target="_blank"><i class="fab fa-twitter"></i></a> -->
+        </div>
+        <p>&copy; <span id="year"></span> Dorcas Mwihaki. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
